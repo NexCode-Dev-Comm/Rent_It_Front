@@ -1,0 +1,23 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.searchClass{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+#catchPhrase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+#catchPhrase > * { margin: 0; }
+p {
+  font-size: 10px;
+}
