@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './autocomplete.css'
 
 const Autocomplete = ({data})=>{
     const [filtered, setFiltered] = useState([]);
@@ -23,9 +24,9 @@ const Autocomplete = ({data})=>{
     return( 
         <div id="search">
             <input value={search} onChange={(e) => Filter(e.target.value)}/>
-            <ul>
+            <ul className="matchList">
                 {filtered.map((filtered, index) => (
-                    <li key={index} onClick={() => ChangeSearch(filtered)} >{filtered}</li>
+                    <li key={index} className="matchItem" onClick={() => ChangeSearch(filtered)} >{filtered}</li>
                 ))}
             </ul>
         </div>
