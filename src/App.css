@@ -4,11 +4,46 @@
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  width: 100vw;
+  height: 100vh;
+  background-color: honeydew;
+  
 }
+.Home{
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  width: 50vw;          
+  height: 50vh;         
+  position: relative;
+  overflow: hidden;
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;   
+  padding: 20px;     
+  align-items: center;
+  justify-content: center;    
+}
+.Home::before{
+  content: ""; 
+  position: absolute; 
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+.Home > * { position: relative; z-index: 1; } 
 .searchClass{
   display: flex;
   flex-direction: row;
-  
+  gap: 20px;
+  border: 1px;
+  border-radius: 6px;
+  border-color: black;
+  background-color: whitesmoke;
+  z-index: 1;
+  padding: 5px;
   
 }
 #catchPhrase{
@@ -18,6 +53,18 @@
   flex-direction: column; 
 }
 #catchPhrase > * { margin: 0; }
+#searchButton{
+  display :flex;
+  align-items: last baseline;
+}
 p {
   font-size: 10px;
+  color: whitesmoke;
+}
+h1{
+  color: whitesmoke;
+}
+label{
+  font-size: xx-small;
+  color: gray;
 }
