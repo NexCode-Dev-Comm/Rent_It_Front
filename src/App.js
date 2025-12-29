@@ -1,7 +1,7 @@
 
 import Autocomplete from "./autocomplete"; 
 import './App.css';
-import bg from './assets/background.png';
+
 function App() {
   const locations = [ "New York", "London", "Tokyo", "Paris", "Sydney", "Dubai", "Toronto", "Berlin", "Singapore", "Los Angeles" ]; 
   return (
@@ -15,15 +15,15 @@ function App() {
         <div className="searchClass">
           <div>
             <label>I'm looking to...</label>
-            <Autocomplete data = {locations}/>
+            <Autocomplete  data = {locations}/>
           </div>
           <div>
             <label>Location</label>
-            <Autocomplete data = {locations}/>
+            <Autocomplete data = {locations} />
           </div>
           <div>
             <label>Price Range</label>
-            <Autocomplete data = {locations}/>
+            <Autocomplete data = {locations} />
           </div>
           <div id="searchButton"><button >Search</button></div>
       
